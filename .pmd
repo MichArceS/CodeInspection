@@ -301,6 +301,18 @@
             <name>UseStringBufferLength</name>
             <ruleset>Performance</ruleset>
         </rule>
+        <rule>
+            <name>CodeStyle</name>
+            <ruleset>Code Style</ruleset>
+        </rule>
+        <rule>
+            <name>ErrorProne</name>
+            <ruleset>Error Prone</ruleset>
+        </rule>
+        <rule>
+            <name>Doc</name>
+            <ruleset>Documentation</ruleset>
+        </rule>
     </rules>
     <includeDerivedFiles>false</includeDerivedFiles>
     <violationsAsErrors>true</violationsAsErrors>

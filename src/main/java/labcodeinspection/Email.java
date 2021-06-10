@@ -2,11 +2,11 @@ package labcodeinspection;
 
 public class Email {
 
-	private String m_firstName; //NOPMD this field will be manipulated later.
-	private String m_lastName;
-	private String password = null;
+	private final String m_firstName;
+	private final String m_lastName;
+	private String password;
 	private String department;
-	private int defaultpasswordLength = 8;
+	private final int defaultpasswordLength = 8;
 	private String email;
 
 	public Email(String firstName, String lastName) {
@@ -30,6 +30,8 @@ public class Email {
 		case 3:
 			this.department = "acct";
 			break;
+		default:
+			
 		}
 	}
 
