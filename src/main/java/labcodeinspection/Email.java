@@ -1,13 +1,15 @@
 package labcodeinspection;
 
+import java.util.Locale;
+
 public class Email {
 
-	private final String m_firstName;
-	private final String m_lastName;
-	private String password;
-	private String department;
-	private final int passLength = 8;
-	private String email;
+	private static String mfirstName;
+	private static String mlastName;
+	private static String password;
+	private static String department;
+	private static int passLength = 8;
+	private static String email;
 
 	/**
 	* 
@@ -16,8 +18,8 @@ public class Email {
 	* @param firstName lastName
 	*/
 	public Email(final String firstName, final String lastName) {
-		this.m_firstName = firstName;
-		this.m_lastName = lastName;
+		this.mfirstName = firstName;
+		this.mlastName = lastName;
 	}
 
 	/**
@@ -26,7 +28,7 @@ public class Email {
 	* @author Lab2
 	*/
 	public void showInfo() {
-		System.out.println("\nFIRST NAME= " + m_firstName + "\nLAST NAME= " + m_lastName);
+		System.out.println("\nFIRST NAME= " + mfirstName + "\nLAST NAME= " + mlastName);
 		System.out.println("DEPARMENT= " + department + "\nEMAIL= " + email + "\nPASSWORD= " + password);
 	}
 
@@ -69,7 +71,7 @@ public class Email {
 	*/
 	public void generateEmail() {
 		this.password = this.randomPassword(this.passLength);
-		this.email = this.m_firstName.toLowerCase() + this.m_lastName.toLowerCase() + "@" + this.department
+		this.email = this.mfirstName.toLowerCase(Locale.getDefault()) + this.mfirstName.toLowerCase(Locale.getDefault()) + "@" + this.department
 				+ ".espol.edu.ec";
 	}
 }

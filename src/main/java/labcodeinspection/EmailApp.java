@@ -2,14 +2,11 @@ package labcodeinspection;
 
 import java.util.Scanner;
 
-@SuppressWarnings("PMD.useUtilityClass")
+//@SuppressWarnings("PMD.useUtilityClass")
 public class EmailApp {
-
-
 	/**
-	* 
-	*
 	* @author Lab2
+	* 
 	*/
 	public static void main(final String[] args) {
 		final Scanner scanner = new Scanner(System.in);
