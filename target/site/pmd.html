@@ -82,7 +82,7 @@ Lab Code Inspection
 <tr class="a">
 <td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass">UseUtilityClass</a></td>
 <td>All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.</td>
-<td>6&#x2013;27</td></tr></table></div></div>
+<td>6&#x2013;33</td></tr></table></div></div>
 <div class="section">
 <h3><a name="Priority_2"></a>Priority 2</h3>
 <div class="section">
@@ -126,96 +126,13 @@ Lab Code Inspection
 <th>Violation</th>
 <th>Line</th></tr>
 <tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#longvariable">LongVariable</a></td>
-<td>Avoid excessively long variable names like defaultpasswordLength</td>
-<td>9</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>12&#x2013;15</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'lastName' is not assigned and could be declared final</td>
-<td>12</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'firstName' is not assigned and could be declared final</td>
-<td>12</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>17&#x2013;20</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>22&#x2013;36</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'depChoice' is not assigned and could be declared final</td>
-<td>22</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'length' is not assigned and could be declared final</td>
-<td>38</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'set' could be declared final</td>
-<td>39</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'rand' could be declared final</td>
-<td>42</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>48&#x2013;52</td></tr>
+<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions">UseLocaleWithCaseConversions</a></td>
+<td>When doing a String.toLowerCase()/toUpperCase() call, use a Locale</td>
+<td>72</td></tr>
 <tr class="a">
 <td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions">UseLocaleWithCaseConversions</a></td>
 <td>When doing a String.toLowerCase()/toUpperCase() call, use a Locale</td>
-<td>50</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions">UseLocaleWithCaseConversions</a></td>
-<td>When doing a String.toLowerCase()/toUpperCase() call, use a Locale</td>
-<td>50</td></tr></table></div>
-<div class="section">
-<h4><a name="labcodeinspection.2FEmailApp.java"></a>labcodeinspection/EmailApp.java</h4>
-<table border="0" class="bodyTable">
-<tr class="a">
-<th>Rule</th>
-<th>Violation</th>
-<th>Line</th></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>8&#x2013;26</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'args' is not assigned and could be declared final</td>
-<td>8</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'sc' could be declared final</td>
-<td>9</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable">ShortVariable</a></td>
-<td>Avoid variables with short names like sc</td>
-<td>9</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'firstName' could be declared final</td>
-<td>12</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'lastName' could be declared final</td>
-<td>15</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'depChoice' could be declared final</td>
-<td>19</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'email' could be declared final</td>
-<td>22</td></tr></table></div></div></div>
+<td>72</td></tr></table></div></div></div>
 <div class="section">
 <h2><a name="Files"></a>Files</h2>
 <div class="section">
@@ -227,14 +144,14 @@ Lab Code Inspection
 <th>Priority</th>
 <th>Line</th></tr>
 <tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize">BeanMembersShouldSerialize</a></td>
-<td>Found non-transient, non-static member. Please mark as transient or provide accessors.</td>
-<td>2</td>
-<td>5</td></tr>
-<tr class="b">
 <td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions">FieldNamingConventions</a></td>
 <td>The final field name 'm_firstName' doesn't match '[a-z][a-zA-Z0-9]*'</td>
 <td>1</td>
+<td>5</td></tr>
+<tr class="b">
+<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize">BeanMembersShouldSerialize</a></td>
+<td>Found non-transient, non-static member. Please mark as transient or provide accessors.</td>
+<td>2</td>
 <td>5</td></tr>
 <tr class="a">
 <td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#fieldnamingconventions">FieldNamingConventions</a></td>
@@ -257,133 +174,38 @@ Lab Code Inspection
 <td>2</td>
 <td>8</td></tr>
 <tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#longvariable">LongVariable</a></td>
-<td>Avoid excessively long variable names like defaultpasswordLength</td>
-<td>3</td>
-<td>9</td></tr>
-<tr class="b">
 <td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize">BeanMembersShouldSerialize</a></td>
 <td>Found non-transient, non-static member. Please mark as transient or provide accessors.</td>
 <td>2</td>
 <td>9</td></tr>
-<tr class="a">
+<tr class="b">
 <td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize">BeanMembersShouldSerialize</a></td>
 <td>Found non-transient, non-static member. Please mark as transient or provide accessors.</td>
 <td>2</td>
 <td>10</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>3</td>
-<td>12&#x2013;15</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'lastName' is not assigned and could be declared final</td>
-<td>3</td>
-<td>12</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'firstName' is not assigned and could be declared final</td>
-<td>3</td>
-<td>12</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>3</td>
-<td>17&#x2013;20</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>3</td>
-<td>22&#x2013;36</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'depChoice' is not assigned and could be declared final</td>
-<td>3</td>
-<td>22</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'length' is not assigned and could be declared final</td>
-<td>3</td>
-<td>38</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'set' could be declared final</td>
-<td>3</td>
-<td>39</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'rand' could be declared final</td>
-<td>3</td>
-<td>42</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>3</td>
-<td>48&#x2013;52</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions">UseLocaleWithCaseConversions</a></td>
-<td>When doing a String.toLowerCase()/toUpperCase() call, use a Locale</td>
-<td>3</td>
-<td>50</td></tr>
 <tr class="a">
 <td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions">UseLocaleWithCaseConversions</a></td>
 <td>When doing a String.toLowerCase()/toUpperCase() call, use a Locale</td>
 <td>3</td>
-<td>50</td></tr></table></div>
+<td>72</td></tr>
+<tr class="b">
+<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#uselocalewithcaseconversions">UseLocaleWithCaseConversions</a></td>
+<td>When doing a String.toLowerCase()/toUpperCase() call, use a Locale</td>
+<td>3</td>
+<td>72</td></tr></table></div>
 <div class="section">
 <h3><a name="labcodeinspection.2FEmailApp.java"></a>labcodeinspection/EmailApp.java</h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Rule</th>
 <th>Violation</th>
 <th>Priority</th>
 <th>Line</th></tr>
-<tr class="a">
+<tr class="b">
 <td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass">UseUtilityClass</a></td>
 <td>All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.</td>
 <td>1</td>
-<td>6&#x2013;27</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_documentation.html#commentrequired">CommentRequired</a></td>
-<td>Public method and constructor comments are required</td>
-<td>3</td>
-<td>8&#x2013;26</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal">MethodArgumentCouldBeFinal</a></td>
-<td>Parameter 'args' is not assigned and could be declared final</td>
-<td>3</td>
-<td>8</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'sc' could be declared final</td>
-<td>3</td>
-<td>9</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#shortvariable">ShortVariable</a></td>
-<td>Avoid variables with short names like sc</td>
-<td>3</td>
-<td>9</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'firstName' could be declared final</td>
-<td>3</td>
-<td>12</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'lastName' could be declared final</td>
-<td>3</td>
-<td>15</td></tr>
-<tr class="b">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'depChoice' could be declared final</td>
-<td>3</td>
-<td>19</td></tr>
-<tr class="a">
-<td><a class="externalLink" href="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal">LocalVariableCouldBeFinal</a></td>
-<td>Local variable 'email' could be declared final</td>
-<td>3</td>
-<td>22</td></tr></table></div></div>
+<td>6&#x2013;33</td></tr></table></div></div>
       </div>
     </div>
     <div class="clear">

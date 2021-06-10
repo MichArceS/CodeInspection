@@ -6,20 +6,37 @@ public class Email {
 	private final String m_lastName;
 	private String password;
 	private String department;
-	private final int defaultpasswordLength = 8;
+	private final int passLength = 8;
 	private String email;
 
-	public Email(String firstName, String lastName) {
+	/**
+	* 
+	*
+	* @author Lab2
+	* @param firstName lastName
+	*/
+	public Email(final String firstName, final String lastName) {
 		this.m_firstName = firstName;
 		this.m_lastName = lastName;
 	}
 
+	/**
+	* 
+	*
+	* @author Lab2
+	*/
 	public void showInfo() {
 		System.out.println("\nFIRST NAME= " + m_firstName + "\nLAST NAME= " + m_lastName);
 		System.out.println("DEPARMENT= " + department + "\nEMAIL= " + email + "\nPASSWORD= " + password);
 	}
 
-	public void setDeparment(int depChoice) {
+	/**
+	* 
+	*
+	* @author Lab2
+	* @param depChoice
+	*/
+	public void setDeparment(final int depChoice) {
 		switch (depChoice) {
 		case 1:
 			this.department = "sales";
@@ -35,18 +52,23 @@ public class Email {
 		}
 	}
 
-	private String randomPassword(int length) {
-		String set = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#$&@*";
+	private String randomPassword(final int length) {
+		final String set = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#$&@*";
 		char[] password = new char[length];
 		for (int i = 0; i < length; i++) {
-			int rand = (int) (Math.random() * set.length());
+			final int rand = (int) (Math.random() * set.length());
 			password[i] = set.charAt(rand);
 		}
 		return new String(password);
 	}
 
+	/**
+	* 
+	*
+	* @author Lab2
+	*/
 	public void generateEmail() {
-		this.password = this.randomPassword(this.defaultpasswordLength);
+		this.password = this.randomPassword(this.passLength);
 		this.email = this.m_firstName.toLowerCase() + this.m_lastName.toLowerCase() + "@" + this.department
 				+ ".espol.edu.ec";
 	}
