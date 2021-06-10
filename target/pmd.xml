@@ -2,10 +2,5 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2021-06-10T17:43:42.154">
-<file name="E:\Taller 2\CodeInspection\src\main\java\labcodeinspection\EmailApp.java">
-<violation beginline="6" endline="30" begincolumn="23" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="labcodeinspection" class="EmailApp" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_design.html#useutilityclass" priority="1">
-All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
-</violation>
-</file>
+    version="6.21.0" timestamp="2021-06-10T18:03:43.318">
 </pmd>

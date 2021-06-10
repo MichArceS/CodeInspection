@@ -2,8 +2,8 @@ package labcodeinspection;
 
 import java.util.Scanner;
 
-//@SuppressWarnings("PMD.useUtilityClass")
-public class EmailApp {
+//@SuppressWarnings("PMD.useUtilityClass") 
+public class EmailApp { //NOPMD
 	/**
 	* @author Lab2
 	* 
